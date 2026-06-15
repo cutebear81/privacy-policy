@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>리뷰곰 지원 페이지</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7;
+    color: #222;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    background: #fafafa;
+  }
+  h1 { font-size: 28px; margin-bottom: 8px; color: #111; }
+  .subtitle {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  h2 { font-size: 20px; margin-top: 36px; margin-bottom: 12px; color: #111; }
+  p, li { font-size: 15px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .intro-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin: 20px 0;
+  }
+  .version-tag {
+    display: inline-block;
+    background: #fff3ec;
+    color: #EE6B26;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+  .contact-box {
+    background: #fff3ec;
+    border-left: 4px solid #EE6B26;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-top: 20px;
+  }
+  .contact-box a { color: #c0531a; font-weight: 600; text-decoration: none; }
+  .contact-box a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid #e5e5e5; margin: 40px 0; }
+  .footer { color: #888; font-size: 13px; text-align: center; margin-top: 60px; }
+</style>
+</head>
+<body>
+
+<h1>리뷰곰 지원 페이지</h1>
+<div class="subtitle">사진과 음성으로 남기고, 한곳에 모아 리뷰로 완성</div>
+
+<div class="intro-card">
+  <p>리뷰곰은 맛집·카페·제품 리뷰를 쉽고 빠르게 작성하도록 돕는 리뷰 메모 앱입니다. 사진을 찍는 순간의 생각을 음성으로 남기고, 흩어진 기록을 한곳에 모아 완성도 높은 리뷰 글로 만들 수 있습니다.</p>
+</div>
+
+<h2>주요 기능</h2>
+<ul>
+  <li>카메라 촬영 또는 갤러리 선택으로 사진 수집</li>
+  <li>사진마다 음성 메모 녹음, 기기 내 음성 인식으로 자동 전사</li>
+  <li>사진별 글과 해시태그 기록</li>
+  <li>수집한 기록을 한 화면에 모아 보고, 항목을 눌러 사진·글·녹음·해시태그 확인 및 복사</li>
+  <li>구글·네이버 인앱 검색으로 참고하며 작성</li>
+  <li>기기 내 AI로 작성한 글을 자연스럽게 다듬어 제안 (적용은 직접 선택)</li>
+  <li>내용·단어·기간(연도·월) 검색, 글자 수 표시</li>
+  <li>음식 톤 필터 프리셋과 세부 보정, 보정 전 원본 비교</li>
+</ul>
+
+<h2>업데이트 내역</h2>
+<div class="intro-card">
+  <span class="version-tag">버전 1.0</span>
+  <p style="margin: 0; color: #666; font-size: 14px;">2026년 첫 출시</p>
+  <ul style="margin-top: 12px; margin-bottom: 0;">
+    <li>사진 수집과 사진별 음성 메모·자동 전사</li>
+    <li>글·해시태그 작성, 수집함 모아보기</li>
+    <li>구글·네이버 인앱 검색, 기기 내 AI 글 다듬기</li>
+    <li>사진 필터·보정과 원본 비교</li>
+  </ul>
+</div>
+
+<h2>자주 묻는 질문</h2>
+
+<p><strong>Q. 사진·카메라·마이크 권한은 왜 필요한가요?</strong><br>
+사진 보관함 권한은 리뷰에 쓸 사진을 불러오고 결과를 저장하기 위해, 카메라 권한은 리뷰용 사진을 직접 촬영하기 위해, 마이크와 음성 인식 권한은 음성 메모를 녹음하고 기기 내에서 전사하기 위해 필요합니다. 권한은 언제든지 기기 설정에서 해제할 수 있습니다.</p>
+
+<p><strong>Q. '글 다듬기'가 동작하지 않아요.</strong><br>
+글 다듬기와 음성 전사는 기기 내 AI(온디바이스)로 처리되며, 이를 지원하는 기기와 iOS 버전에서만 동작합니다. 지원하지 않는 환경에서는 안내 메시지가 표시됩니다.</p>
+
+<p><strong>Q. 작성한 기록과 사진은 어디에 저장되나요?</strong><br>
+녹음·글·해시태그·최근 검색어는 기기 내부에만 저장되고, 사진은 사용자가 저장을 선택할 때 사진 보관함에 저장됩니다. 외부 서버로 전송되거나 다른 사람과 공유되지 않습니다.</p>
+
+<p><strong>Q. 작성 메뉴의 검색은 무엇인가요?</strong><br>
+작성 화면 위쪽에서 구글·네이버로 바로 검색해 참고 자료를 보면서 글을 쓸 수 있는 인앱 검색입니다. 검색어는 해당 검색 서비스로 전송되어 결과를 보여줍니다.</p>
+
+<p><strong>Q. 앱을 삭제하면 데이터는 어떻게 되나요?</strong><br>
+앱을 삭제하면 앱 내부에 저장된 기록이 함께 삭제됩니다. 이미 사진 보관함에 저장한 이미지는 그대로 남아 있습니다.</p>
+
+<div class="contact-box">
+  <h2 style="margin-top: 0;">문의하기</h2>
+  <p style="margin-bottom: 0;">
+    사용 중 불편한 점이나 개선 의견이 있으시면 아래 이메일로 연락주세요.<br>
+    <a href="mailto:tonyneplanning@gmail.com">tonyneplanning@gmail.com</a>
+  </p>
+</div>
+
+<div class="footer">
+  © 2026 리뷰곰. All rights reserved.
+</div>
+
+</body>
+</html>
