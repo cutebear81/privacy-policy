@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>홀짝곰 지원 페이지</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7; color: #222; max-width: 760px; margin: 0 auto;
+    padding: 40px 24px 80px; background: #fafafa;
+  }
+  h1 { font-size: 28px; margin-bottom: 8px; color: #111; }
+  .subtitle { color: #666; font-size: 15px; margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid #e5e5e5; }
+  h2 { font-size: 20px; margin-top: 36px; margin-bottom: 12px; color: #111; }
+  p, li { font-size: 15px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .intro-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 10px; padding: 22px 24px; margin: 20px 0; }
+  .version-tag { display: inline-block; background: #fff3ec; color: #EE6B26; font-size: 13px; font-weight: 600; padding: 4px 10px; border-radius: 999px; margin-bottom: 12px; }
+  .contact-box { background: #fff3ec; border-left: 4px solid #EE6B26; border-radius: 4px; padding: 16px 20px; margin-top: 20px; }
+  .contact-box a { color: #c0531a; font-weight: 600; text-decoration: none; }
+  .contact-box a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid #e5e5e5; margin: 40px 0; }
+  .footer { color: #888; font-size: 13px; text-align: center; margin-top: 60px; }
+</style>
+</head>
+<body>
+
+<h1>홀짝곰 지원 페이지</h1>
+<div class="subtitle">한 모금의 기록 · 술과 차의 테이스팅 노트</div>
+
+<div class="intro-card">
+  <p>홀짝곰은 술과 차를 마신 순간의 향과 맛을 기록하고, 쌓인 기록으로 내 취향을 분석해 주는 테이스팅 노트 앱입니다. 사진과 별점, 향미 표현을 더해 나만의 시음 기록을 완성해 보세요.</p>
+</div>
+
+<h2>주요 기능</h2>
+<ul>
+  <li>술·차 노트 작성: 사진, 별점, 향·맛 표현(자동완성), 테이스팅 항목</li>
+  <li>주종별 세부 항목: 와인 품종, 맥주 종류, 과실주 품종, 전통주·막걸리·진·증류주 주재료 (자동완성 인덱스)</li>
+  <li>양조장·다원, 빈티지, 가격, 장소 기록</li>
+  <li>취향 분석: 향미 대분류 도넛 차트, 자주 쓴 표현 워드클라우드, 별점 분포, 한줄평·칭호</li>
+  <li>오늘의 날씨 한 잔: 현재 날씨에 어울리는 술·차를 내 기록 중에서 추천</li>
+  <li>사진 라벨 글자 자동 인식으로 이름·빈티지 자동 입력</li>
+  <li>구글·네이버 인앱 검색으로 참고하며 작성</li>
+</ul>
+
+<h2>업데이트 내역</h2>
+<div class="intro-card">
+  <span class="version-tag">버전 1.0</span>
+  <p style="margin: 0; color: #666; font-size: 14px;">2026년 첫 출시</p>
+  <ul style="margin-top: 12px; margin-bottom: 0;">
+    <li>술·차 테이스팅 노트와 향미 표현 자동완성</li>
+    <li>취향 분석 리포트(도넛·워드클라우드·칭호)</li>
+    <li>오늘의 날씨 한 잔 추천</li>
+    <li>주종별 세부 항목과 양조장·다원</li>
+  </ul>
+</div>
+
+<h2>자주 묻는 질문</h2>
+
+<p><strong>Q. 카메라·사진 권한은 왜 필요한가요?</strong><br>
+테이스팅 노트에 사진을 첨부하기 위해 사용합니다. 카메라는 직접 촬영, 사진 보관함은 기존 사진을 불러오는 데 쓰며, 권한은 언제든 기기 설정에서 해제할 수 있습니다.</p>
+
+<p><strong>Q. '오늘의 날씨 한 잔'은 어떻게 동작하나요?</strong><br>
+현재 위치의 날씨를 Apple 날씨 서비스(WeatherKit)로 받아와, 날씨에 어울리는 술·차를 내가 기록한 노트 중에서 추천합니다. 위치는 날씨 조회에만 쓰이고 저장되지 않으며, 위치 권한을 허용하지 않아도 다른 기능은 정상 동작합니다.</p>
+
+<p><strong>Q. '날씨를 불러오지 못했어요'가 떠요.</strong><br>
+위치 권한을 허용했는지, 기기가 인터넷에 연결되어 있는지 확인해 주세요. 권한을 막 허용한 직후에는 잠시 후 카드의 새로고침으로 다시 시도하면 됩니다.</p>
+
+<p><strong>Q. 작성한 노트와 사진은 어디에 저장되나요?</strong><br>
+모두 기기 내부에만 저장되며 외부 서버로 전송되지 않습니다. 앱을 삭제하면 앱 내부 데이터가 함께 삭제됩니다.</p>
+
+<p><strong>Q. 후원하기는 무엇인가요?</strong><br>
+설정의 후원하기는 개발자를 응원하는 소모성 인앱 구매입니다(아이스크림·커피·한끼). 별도의 기능 잠금 해제는 없습니다.</p>
+
+<div class="contact-box">
+  <h2 style="margin-top: 0;">문의하기</h2>
+  <p style="margin-bottom: 0;">
+    사용 중 불편한 점이나 개선 의견이 있으시면 아래 이메일로 연락주세요.<br>
+    <a href="mailto:tonyneplanning@gmail.com">tonyneplanning@gmail.com</a>
+  </p>
+</div>
+
+<div class="footer">© 2026 홀짝곰. All rights reserved.</div>
+
+</body>
+</html>
