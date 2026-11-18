@@ -54,7 +54,7 @@
 <div class="subtitle">최종 수정일: 2026년 11월 19일 · 시행일: 2026년 11월 19일</div>
 
 <div class="intro-card">
-  <p>캡쳐곰(이하 "앱")은 스크린샷과 화면 녹화를 한 장으로 이어붙이고, 가리기·자르기·나눠 저장·PDF 내보내기와 사진 속 색상 코드 추출 기능을 제공합니다. 사용자의 사진과 이미지는 모두 사용자의 기기 안에서만 처리되며, 토니네는 이를 받아 보거나 저장하지 않습니다. 아이폰 앱은 무료로 제공하기 위해 화면 아래에 Google AdMob 광고를 표시하며, 광고 표시에 필요한 정보는 아래와 같이 Google이 처리합니다.</p>
+  <p>캡쳐곰(이하 "앱")은 스크린샷과 화면 녹화를 한 장으로 이어붙이고, 가리기·자르기·나눠 저장·PDF 내보내기와 사진 속 색상 코드 추출 기능을 제공합니다. 사용자의 사진과 이미지는 모두 사용자의 기기 안에서만 처리되며, 토니네는 이를 받아 보거나 저장하지 않습니다. 앱은 무료로 제공하기 위해 화면 아래에 Google AdMob 광고를 표시하며(아이폰·안드로이드), 광고 표시에 필요한 정보는 아래와 같이 Google이 처리합니다.</p>
 </div>
 
 <h2>1. 처리하는 정보 및 목적</h2>
@@ -65,20 +65,20 @@
   <li>색상 추출을 위해 카메라로 촬영한 이미지</li>
   <li>추출한 색상 기록(색상 코드 히스토리)</li>
 </ul>
-<p>이 정보는 사용자의 기기 안에서만 처리·저장되며, 토니네나 광고 업체로 전송되지 않습니다. '가리기'의 글자 찾기는 아이폰에 내장된 글자 인식 기능으로 기기 안에서만 처리합니다. 사진 앱의 공유 메뉴로 캡쳐곰에 보낸 이미지는 앱을 열 때까지 기기 안의 앱 전용 폴더에 잠시 보관되었다가, 앱으로 옮겨진 뒤 삭제됩니다.</p>
+<p>이 정보는 사용자의 기기 안에서만 처리·저장되며, 토니네나 광고 업체로 전송되지 않습니다. '가리기'의 글자 찾기는 기기 안에서만 처리합니다(아이폰은 내장 글자 인식, 안드로이드는 앱에 들어 있는 Google ML Kit 글자 인식). 다른 앱의 공유 메뉴로 캡쳐곰에 보낸 이미지는 기기 안의 앱 전용 공간에 잠시 보관되었다가 삭제됩니다(아이폰은 앱으로 옮겨진 뒤, 안드로이드는 다음 공유 때).</p>
 
 <h3>1-2. 기기 권한을 통해 사용하는 정보</h3>
 <ul>
-  <li><strong>사진 보관함 접근 권한</strong>: 이어붙일 스크린샷과 화면 녹화를 불러오고, 결과 이미지를 저장하며, 사용자가 요청한 경우 이어붙인 원본 스크린샷을 삭제하기 위해 사용합니다. 원본 삭제는 iOS 확인 창에서 사용자가 승인해야 실행됩니다.</li>
-  <li><strong>카메라 접근 권한</strong>: 색상 추출 기능에서 사용자가 직접 촬영한 사진의 색상 코드를 뽑기 위해 사용합니다.</li>
-  <li><strong>추적 허용(앱 추적 투명성)</strong>: 맞춤 광고를 보여 주는 데에만 사용합니다. 허용하지 않아도 앱의 모든 기능을 사용할 수 있습니다.</li>
+  <li><strong>사진 보관함 접근 권한</strong>: 이어붙일 스크린샷과 화면 녹화를 불러오고, 결과 이미지를 저장하며, 사용자가 요청한 경우 이어붙인 원본 스크린샷을 삭제하기 위해 사용합니다. 원본 삭제는 기기의 확인 창에서 사용자가 승인해야 실행됩니다.</li>
+  <li><strong>카메라</strong>: 색상 추출 기능에서 사용자가 직접 촬영한 사진의 색상 코드를 뽑기 위해 사용합니다(안드로이드는 기기의 카메라 앱을 엽니다).</li>
+  <li><strong>추적 허용(앱 추적 투명성, 아이폰)</strong>: 맞춤 광고를 보여 주는 데에만 사용합니다. 허용하지 않아도 앱의 모든 기능을 사용할 수 있습니다.</li>
 </ul>
 <p>위 권한은 사용자가 명시적으로 허용한 경우에만 사용되며, 언제든지 기기의 설정 메뉴에서 해제할 수 있습니다.</p>
 
 <h3>1-3. 광고(Google AdMob)</h3>
 <p>광고를 표시하기 위해 Google AdMob이 다음 정보를 수집·처리할 수 있습니다.</p>
 <ul>
-  <li>기기 식별자(광고 식별자 IDFA — 사용자가 추적을 허용한 경우에만), 대략적인 위치(IP 주소 기반), 광고 노출·클릭 등 광고 상호 작용 정보, 앱 충돌·성능 등 진단 정보</li>
+  <li>기기 식별자(아이폰: 광고 식별자 IDFA — 사용자가 추적을 허용한 경우에만 / 안드로이드: Google 광고 ID), 대략적인 위치(IP 주소 기반), 광고 노출·클릭 등 광고 상호 작용 정보, 앱 충돌·성능 등 진단 정보</li>
 </ul>
 <p>이 정보는 광고 제공, 광고 성과 측정, 부정 행위 방지에 사용되며 Google 개인정보처리방침에 따라 처리됩니다: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
 <p>Google이 파트너의 앱에서 정보를 사용하는 방법: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
@@ -89,7 +89,7 @@
 <p>본 앱은 이름, 이메일 주소, 전화번호 등 개인 식별 정보와 연락처·일정 등 기기에 저장된 다른 데이터를 수집하지 않습니다.</p>
 
 <h2>2. 정보의 저장 및 보관</h2>
-<p>결과 이미지는 사용자가 저장을 선택할 때 기기의 사진 보관함에 저장되고, PDF는 사용자가 고른 곳으로 공유됩니다. 색상 기록은 앱 내부 저장소에만 보관됩니다. 토니네는 별도의 서버를 운영하지 않습니다. 사용자가 iOS의 iCloud 백업을 켠 경우 해당 백업에 앱 데이터가 포함될 수 있으며, 이는 Apple의 iCloud 정책에 따라 처리됩니다.</p>
+<p>결과 이미지는 사용자가 저장을 선택할 때 기기의 사진 보관함에 저장되고, PDF는 사용자가 고른 곳으로 공유됩니다. 색상 기록은 앱 내부 저장소에만 보관됩니다. 토니네는 별도의 서버를 운영하지 않습니다. 아이폰에서 iCloud 백업을 켠 경우 해당 백업에 앱 데이터가 포함될 수 있으며 Apple의 iCloud 정책에 따라 처리됩니다. 안드로이드에서는 기기의 Google 자동 백업에 앱 데이터와 설정이 포함될 수 있으며 Google 정책에 따라 처리됩니다.</p>
 
 <h2>3. 정보의 제3자 제공</h2>
 <p>토니네는 사용자의 사진·이미지·색상 기록을 제3자에게 제공하거나 판매하지 않습니다. 다만 광고 표시를 위해 1-3의 정보가 Google에 의해 수집·처리됩니다.</p>
@@ -100,8 +100,8 @@
 <h2>5. 사용자의 권리와 선택</h2>
 <ul>
   <li>앱 내 색상 기록의 열람 및 삭제</li>
-  <li>사진 보관함, 카메라, 추적 허용 등 권한의 허용 또는 해제(기기 설정)</li>
-  <li>맞춤 광고 끄기: 기기 설정 &gt; 개인정보 보호 및 보안 &gt; 추적에서 캡쳐곰의 추적을 끌 수 있습니다.</li>
+  <li>사진·카메라·추적 허용 등 권한의 허용 또는 해제(기기 설정)</li>
+  <li>맞춤 광고 끄기: 아이폰은 기기 설정 &gt; 개인정보 보호 및 보안 &gt; 추적에서 캡쳐곰의 추적을 끌 수 있습니다. 안드로이드는 기기 설정 &gt; 개인정보 보호(또는 Google) &gt; 광고에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</li>
   <li>광고 제거: 앱 설정에서 '광고 제거'를 구매하면 광고가 표시되지 않습니다.</li>
   <li>앱 삭제를 통한 앱 내부 데이터의 일괄 삭제</li>
 </ul>
@@ -124,7 +124,7 @@
 <h1>Capchgom (캡쳐곰) Privacy Policy</h1>
 <div class="subtitle">Last updated: November 19, 2026 · Effective date: November 19, 2026</div>
 
-<p>Capchgom ("the App") stitches screenshots and screen recordings into one image and offers masking, cropping, splitting, PDF export and color-code extraction. Your photos and images are processed only on your device; Tonyne never receives or stores them. To keep the iPhone app free, it shows Google AdMob banner ads, and Google processes the information needed for ads as described below.</p>
+<p>Capchgom ("the App") stitches screenshots and screen recordings into one image and offers masking, cropping, splitting, PDF export and color-code extraction. Your photos and images are processed only on your device; Tonyne never receives or stores them. To keep the App free, it shows Google AdMob banner ads (iPhone and Android), and Google processes the information needed for ads as described below.</p>
 
 <h2>1. Information We Process</h2>
 <h3>1-1. Information you use</h3>
@@ -133,18 +133,18 @@
   <li>Images you capture with the camera for color extraction</li>
   <li>Extracted color records (color code history)</li>
 </ul>
-<p>This information is processed and stored only on your device and is never sent to Tonyne or to advertising companies. Text detection for masking uses the iPhone's built-in on-device text recognition. Images sent to the App through the share menu are kept briefly in the App's private folder on your device until you open the App, and are deleted once moved into the App.</p>
+<p>This information is processed and stored only on your device and is never sent to Tonyne or to advertising companies. Text detection for masking runs only on your device (iPhone: built-in text recognition; Android: Google ML Kit text recognition bundled in the App). Images sent to the App through another app's share menu are kept briefly in the App's private storage on your device and then deleted (iPhone: once moved into the App; Android: at the next share).</p>
 
 <h3>1-2. Device permissions</h3>
 <ul>
-  <li><strong>Photo library</strong>: to load screenshots and screen recordings, save results, and, when you ask, delete the original screenshots. Deletion runs only after you approve the iOS confirmation dialog.</li>
-  <li><strong>Camera</strong>: to extract a color code from a photo you take in the color extraction feature.</li>
-  <li><strong>Tracking (App Tracking Transparency)</strong>: used only to show personalized ads. You can use every feature of the App without allowing it.</li>
+  <li><strong>Photo library</strong>: to load screenshots and screen recordings, save results, and, when you ask, delete the original screenshots. Deletion runs only after you approve the device's confirmation dialog.</li>
+  <li><strong>Camera</strong>: to extract a color code from a photo you take in the color extraction feature (on Android, the device's camera app is opened).</li>
+  <li><strong>Tracking (App Tracking Transparency, iPhone)</strong>: used only to show personalized ads. You can use every feature of the App without allowing it.</li>
 </ul>
 <p>You can turn these off at any time in your device settings.</p>
 
 <h3>1-3. Advertising (Google AdMob)</h3>
-<p>To show ads, Google AdMob may collect and process: device identifiers (the advertising identifier IDFA, only if you allow tracking), approximate location (based on IP address), ad interaction data such as impressions and clicks, and diagnostic data such as crashes and performance.</p>
+<p>To show ads, Google AdMob may collect and process: device identifiers (iPhone: the advertising identifier IDFA, only if you allow tracking; Android: the Google advertising ID), approximate location (based on IP address), ad interaction data such as impressions and clicks, and diagnostic data such as crashes and performance.</p>
 <p>This is used to serve ads, measure ad performance and prevent fraud, under Google's Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
 <p>How Google uses information from partner apps: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
 <p>Users in the EEA, the UK and similar regions see a consent screen before ads are shown and can change their choice at any time under "Ad privacy settings" in the App settings.</p>
@@ -154,7 +154,7 @@
 <p>The App does not collect your name, email address, phone number or other personal identifiers, nor contacts, calendars or other data on your device.</p>
 
 <h2>2. Storage</h2>
-<p>Result images are saved to your photo library when you choose to save them, and PDFs are shared to the destination you choose. Color records are stored only in the App's local storage. Tonyne does not operate any server for the App. If you use iCloud Backup, App data may be included in it under Apple's iCloud terms.</p>
+<p>Result images are saved to your photo library when you choose to save them, and PDFs are shared to the destination you choose. Color records are stored only in the App's local storage. Tonyne does not operate any server for the App. On iPhone, iCloud Backup may include App data under Apple's iCloud terms. On Android, the device's Google auto backup may include App data and settings under Google's terms.</p>
 
 <h2>3. Sharing</h2>
 <p>Tonyne does not share or sell your photos, images or color records. Only the information in 1-3 is collected and processed by Google for advertising.</p>
@@ -165,8 +165,8 @@
 <h2>5. Your choices</h2>
 <ul>
   <li>View and delete color records in the App</li>
-  <li>Allow or revoke photo library, camera and tracking permissions in device settings</li>
-  <li>Turn off personalized ads: Settings &gt; Privacy &amp; Security &gt; Tracking</li>
+  <li>Allow or revoke photo, camera and tracking permissions in device settings</li>
+  <li>Turn off personalized ads: on iPhone, Settings &gt; Privacy &amp; Security &gt; Tracking; on Android, reset or delete the advertising ID in Settings &gt; Privacy (or Google) &gt; Ads</li>
   <li>Remove ads: purchase "Remove Ads" in the App settings</li>
   <li>Delete all in-app data by deleting the App</li>
 </ul>
